@@ -79,7 +79,7 @@ You will now call the REST service in a [microflow](../../refguide/microflows). 
 To call the REST service in a microflow, follow these steps:
 
 1. Create a new microflow.
-2. Add an **Input** object as an input parameter.
+2. Add a **Parameter** and select the **Input** entity.
 3. From the **Toolbox**, drag a **Call REST service** activity onto the microflow and double-click it.
 4. Edit the location to `https://en.wikipedia.org/api/rest_v1/page/summary/{1}`, with the parameter `$Input/Title`.
 
@@ -117,10 +117,10 @@ The rest of this how-to will describe turning this microflow into an app. It doe
 
 To create a page for this app, follow these steps:
 
-1. Open the **Homepage** and add a **Data view**.
+1. Add a new, blank page and add a **Data view**.
 2. From the **Connector**, drag the **Input** entity onto to the **[Unknown]** bar.
 3. Select **Microflow**.
-4. For the **Name**, enter *CreateInput*. Please note that when this page loads, it needs a new **Input** object – you will fill the **CreateInput** microflow that creates this object below.
+4. For the **Name**, enter *CreateInput*, this will result in a new microflow. Please note that when this page loads, it needs a new **Input** object – you will fill the **CreateInput** microflow that creates this object below.
 5. Click **OK**.
 6. From **Container widgets**, add a new **Table** with one row and two columns.
 7. Drag the **Title** field onto the left column.
